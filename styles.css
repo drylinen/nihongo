@@ -17,11 +17,19 @@ header {
 #hamburger-menu {
     cursor: pointer;
     margin-right: 1rem;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-0.2rem); /* Nudges the symbol up to align with text baseline */
 }
 
 #title {
     flex-grow: 1;
-    font-size: 2rem;
+    font-size: 1.5rem; /* Made it smaller */
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 nav {
@@ -45,13 +53,22 @@ nav ul {
 }
 
 nav ul li {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+}
+
+nav ul li strong {
+    text-transform: uppercase;
+    color: #888;
+    display: block;
+    font-size: 1rem;
 }
 
 nav ul li a {
-    color: #e0e0e0;
+    color: #add8e6; /* Light Blue */
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    display: block;
 }
 
 main {
@@ -90,8 +107,8 @@ main {
 
 .kana-card {
     display: flex;
-    width: 80px;
-    height: 100px;
+    width: 120px;
+    height: 60px;
     border: 2px solid #333;
     border-radius: 8px;
     overflow: hidden;
@@ -103,7 +120,7 @@ main {
     align-items: center;
     justify-content: center;
     flex: 1;
-    font-size: 1.5rem;
+    font-size: 2rem; /* Increased from 1.5rem */
 }
 
 .kana-side {
@@ -112,6 +129,6 @@ main {
 }
 
 .romaji-side {
-    font-size: 0.9rem;
+    font-size: 1.1rem; /* Increased from 0.9rem */
     color: #bbb;
 }
