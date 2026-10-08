@@ -1,1 +1,32 @@
-<h1>Sekai, konnichiwa!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihon GO!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button id="hamburgerMenu">&#9776;</button>
+        <div class="title">Nihon GO!</div>
+    </header>
+    <nav id="sidebar" class="hidden">
+        <h2>Katakana</h2>
+        <ul>
+            <li><a href="#" onclick="showView('katakanaBrowse')">Browse</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="welcome" class="view visible">
+            <h1>Welcome to Nihon GO!</h1>
+            <p>Practice and learn Japanese characters.</p>
+        </section>
+        <section id="katakanaBrowse" class="view hidden">
+            <h2>Browse Katakana</h2>
+            <p>This is the Katakana browse section.</p>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
