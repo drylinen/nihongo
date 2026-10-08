@@ -15,4 +15,49 @@ document.addEventListener('DOMContentLoaded', function() {
             nav.classList.remove('open'); // Close the menu after navigation
         });
     });
+
+    populateBrowseView();
 });
+
+function populateBrowseView() {
+    const browseView = document.getElementById('katakana-browse-view');
+    if (!katakana) return;
+
+    // Group by row_type
+    const rows = {};
+    katakana.forEach(item => {
+        if (!rows[item.row_type]) {
+            rows[item.row_type] = [];
+        }
+        rows[item.row_type].push(item);
+    });
+
+    // Create elements for each row
+    for (const rowType in rows) {
+        const rowElement = document.createElement('div');
+        rowElement.className = 'kana-row';
+
+        const containerElement = document.createElement('div');
+        containerElement.className = 'kana-card-container';
+
+        rows[rowType].forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'kana-card';
+
+            const leftHalf = document.createElement('div');
+            leftHalf.className = 'kana-half kana-side';
+            leftHalf.textContent = item.kana;
+
+            const rightHalf = document.createElement('div');
+            rightHalf.className = 'kana-half romaji-side';
+            rightHalf.textContent = item.romaji;
+
+            card.appendChild(leftHalf);
+            card.appendChild(rightHalf);
+            containerElement.appendChild(card);
+        });
+
+        rowElement.appendChild(containerElement);
+        browseView.appendChild(rowElement);
+    }
+}

@@ -1,4 +1,4 @@
-[
+const katakana = [
   {
     "kana": "ア",
     "romaji": "a",

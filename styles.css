@@ -75,3 +75,42 @@ main {
     font-size: 1.5rem;
     text-align: center;
 }
+
+/* Kana Browse View styles */
+.kana-row {
+    margin-bottom: 2rem;
+}
+
+.kana-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.kana-card {
+    display: flex;
+    width: 80px;
+    height: 100px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #2a2a2a;
+}
+
+.kana-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-size: 1.5rem;
+}
+
+.kana-side {
+    background-color: #3a3a3a;
+    border-right: 1px solid #444;
+}
+
+.romaji-side {
+    font-size: 0.9rem;
+    color: #bbb;
+}
