@@ -1,6 +1,8 @@
-/* styles.css */
+/* Dark theme styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
 }
@@ -8,50 +10,68 @@ body {
 header {
     display: flex;
     align-items: center;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    background-color: #1e1e1e;
+    padding: 1rem;
 }
 
-#hamburgerMenu {
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: inherit;
+#hamburger-menu {
     cursor: pointer;
+    margin-right: 1rem;
 }
 
-.title {
-    margin-left: 15px;
+#title {
     flex-grow: 1;
-    text-align: center;
+    font-size: 2rem;
 }
 
 nav {
-    position: fixed;
-    left: 0;
-    top: 60px;
-    bottom: 0;
-    width: 200px;
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    position: absolute;
+    top: 4rem;
+    left: -20rem;
+    width: 20rem;
+    background-color: #1e1e1e;
+    padding: 1rem;
+    transition: left 0.3s ease-in-out;
 }
 
-nav.hidden {
-    display: none;
+nav.open {
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 1rem 0;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.25rem;
 }
 
 main {
-    margin-left: 220px; /* Adjust for sidebar */
-    padding: 20px;
+    padding: 2rem;
 }
 
 .view {
     display: none;
 }
 
-.view.visible {
+.view.active {
     display: block;
+}
+
+/* Main view styles */
+#home-view,
+#katakana-browse-view {
+    margin-top: 2rem;
+}
+
+#welcome-message {
+    font-size: 1.5rem;
+    text-align: center;
 }

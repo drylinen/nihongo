@@ -8,24 +8,22 @@
 </head>
 <body>
     <header>
-        <button id="hamburgerMenu">&#9776;</button>
-        <div class="title">Nihon GO!</div>
+        <div id="hamburger-menu">☰</div>
+        <div id="title">Nihon GO!</div>
     </header>
-    <nav id="sidebar" class="hidden">
-        <h2>Katakana</h2>
+    <nav>
         <ul>
-            <li><a href="#" onclick="showView('katakanaBrowse')">Browse</a></li>
+            <li><strong>Katakana</strong></li>
+            <li><a href="#" data-view="katakana-browse">Browse</a></li>
         </ul>
     </nav>
     <main>
-        <section id="welcome" class="view visible">
-            <h1>Welcome to Nihon GO!</h1>
-            <p>Practice and learn Japanese characters.</p>
-        </section>
-        <section id="katakanaBrowse" class="view hidden">
-            <h2>Browse Katakana</h2>
-            <p>This is the Katakana browse section.</p>
-        </section>
+        <div id="home-view" class="view active">
+            <h1 id="welcome-message">Welcome to Nihon GO!</h1>
+        </div>
+        <div id="katakana-browse-view" class="view">
+            <!-- Katakana Browse content will go here -->
+        </div>
     </main>
     <script src="scripts.js"></script>
 </body>
