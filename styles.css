@@ -116,6 +116,26 @@ main {
     background-color: #2a2a2a;
 }
 
+.kana-card--wide {
+    width: 180px;
+}
+
+.kana-card--gojuuon {
+    border-color: #0d47a1;
+}
+
+.kana-card--dakuten {
+    border-color: #8e0000;
+}
+
+.kana-card--handakuten {
+    border-color: #bf360c;
+}
+
+.kana-card--youon {
+    border-color: #1b5e20;
+}
+
 .kana-half {
     display: flex;
     align-items: center;
@@ -221,4 +241,95 @@ main {
 
 #quiz-restart:hover {
     background-color: #1565c0;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 200px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    border: 2px solid #333;
+}
+
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: #fff;
+}
+
+#modal-body .modal-kana {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+#modal-body .modal-romaji {
+    font-size: 1.5rem;
+    color: #bbb;
+    margin-bottom: 0.25rem;
+}
+
+#modal-body .modal-type {
+    font-size: 0.9rem;
+    color: #888;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+
+#modal-body .modal-words {
+    text-align: left;
+}
+
+#modal-body .modal-words h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1rem;
+    color: #888;
+    text-transform: uppercase;
+}
+
+#modal-body .modal-word-item {
+    margin-bottom: 0.5rem;
+}
+
+#modal-body .modal-word-kana {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+#modal-body .modal-word-en {
+    font-size: 0.95rem;
+    color: #bbb;
+}
+
+#modal-body .modal-word-sv {
+    font-size: 0.95rem;
+    color: #888;
+    font-style: italic;
 }
