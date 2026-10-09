@@ -51,6 +51,7 @@ function populateBrowseView() {
             if (item.type === 'youon') {
                 card.classList.add('kana-card--wide');
             }
+            card.classList.add(`kana-card--${item.type}`);
 
             const leftHalf = document.createElement('div');
             leftHalf.className = 'kana-half kana-side';
