@@ -17,11 +17,11 @@ header {
 #hamburger-menu {
     cursor: pointer;
     margin-right: 1rem;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(-0.2rem); /* Nudges the symbol up to align with text baseline */
+    transform: translateY(-0.1rem); /* Nudges the symbol up to align with text baseline */
 }
 
 #title {
