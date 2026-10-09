@@ -85,7 +85,8 @@ main {
 
 /* Main view styles */
 #home-view,
-#katakana-browse-view {
+#katakana-browse-view,
+#katakana-quiz-view {
     margin-top: 2rem;
 }
 
@@ -131,4 +132,93 @@ main {
 .romaji-side {
     font-size: 1.1rem; /* Increased from 0.9rem */
     color: #bbb;
+}
+
+/* Quiz styles */
+#quiz-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#quiz-progress {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+#quiz-kana {
+    font-size: 5rem;
+    margin: 1rem 0 2rem;
+}
+
+#quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.quiz-option {
+    padding: 0.75rem;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.quiz-option:hover {
+    background-color: #3a3a3a;
+}
+
+.quiz-option.correct {
+    background-color: #1b5e20;
+    border-color: #2e7d32;
+}
+
+.quiz-option.wrong {
+    background-color: #7f1d1d;
+    border-color: #b91c1c;
+}
+
+.quiz-option.disabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+#quiz-next {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    background-color: #1e88e5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+}
+
+#quiz-next:hover {
+    background-color: #1565c0;
+}
+
+#quiz-score {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+#quiz-restart {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    background-color: #1e88e5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#quiz-restart:hover {
+    background-color: #1565c0;
 }
