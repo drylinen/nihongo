@@ -1102,5 +1102,1397 @@ const katakana = [
       }
     ],
     "id": 46
+  },
+    {
+    "kana": "ガ",
+    "romaji": "ga",
+    "type": "dakuten",
+    "row_type": "g-row",
+    "words": [
+      {
+        "word": "ガス",
+        "en": "gas",
+        "sv": "gas"
+      },
+      {
+        "word": "ガラス",
+        "en": "glass",
+        "sv": "glas"
+      },
+      {
+        "word": "マンゴー",
+        "en": "mango",
+        "sv": "mango"
+      }
+    ],
+    "id": 47
+  },
+  {
+    "kana": "ギ",
+    "romaji": "gi",
+    "type": "dakuten",
+    "row_type": "g-row",
+    "words": [
+      {
+        "word": "ギター",
+        "en": "guitar",
+        "sv": "gitarr"
+      },
+      {
+        "word": "ギフト",
+        "en": "gift",
+        "sv": "gåva"
+      },
+      {
+        "word": "ギザ",
+        "en": "Giza",
+        "sv": "Giza"
+      }
+    ],
+    "id": 48
+  },
+  {
+    "kana": "グ",
+    "romaji": "gu",
+    "type": "dakuten",
+    "row_type": "g-row",
+    "words": [
+      {
+        "word": "グラム",
+        "en": "gram",
+        "sv": "gram"
+      },
+      {
+        "word": "グリーン",
+        "en": "green",
+        "sv": "grön"
+      },
+      {
+        "word": "グミ",
+        "en": "gummy candy",
+        "sv": "gelégodis"
+      }
+    ],
+    "id": 49
+  },
+  {
+    "kana": "ゲ",
+    "romaji": "ge",
+    "type": "dakuten",
+    "row_type": "g-row",
+    "words": [
+      {
+        "word": "ゲーム",
+        "en": "game",
+        "sv": "spel"
+      },
+      {
+        "word": "ゲスト",
+        "en": "guest",
+        "sv": "gäst"
+      },
+      {
+        "word": "ゲル",
+        "en": "gel",
+        "sv": "gel"
+      }
+    ],
+    "id": 50
+  },
+  {
+    "kana": "ゴ",
+    "romaji": "go",
+    "type": "dakuten",
+    "row_type": "g-row",
+    "words": [
+      {
+        "word": "ゴルフ",
+        "en": "golf",
+        "sv": "golf"
+      },
+      {
+        "word": "ゴリラ",
+        "en": "gorilla",
+        "sv": "gorilla"
+      },
+      {
+        "word": "ゴール",
+        "en": "goal",
+        "sv": "mål"
+      }
+    ],
+    "id": 51
+  },
+  {
+    "kana": "ザ",
+    "romaji": "za",
+    "type": "dakuten",
+    "row_type": "z-row",
+    "words": [
+      {
+        "word": "デザイン",
+        "en": "design",
+        "sv": "design"
+      },
+      {
+        "word": "サラダ",
+        "en": "salad",
+        "sv": "sallad"
+      },
+      {
+        "word": "レーザー",
+        "en": "laser",
+        "sv": "laser"
+      }
+    ],
+    "id": 52
+  },
+  {
+    "kana": "ジ",
+    "romaji": "ji",
+    "type": "dakuten",
+    "row_type": "z-row",
+    "words": [
+      {
+        "word": "ジュース",
+        "en": "juice",
+        "sv": "juice"
+      },
+      {
+        "word": "ラジオ",
+        "en": "radio",
+        "sv": "radio"
+      },
+      {
+        "word": "ページ",
+        "en": "page",
+        "sv": "sida"
+      }
+    ],
+    "id": 53
+  },
+  {
+    "kana": "ズ",
+    "romaji": "zu",
+    "type": "dakuten",
+    "row_type": "z-row",
+    "words": [
+      {
+        "word": "ズボン",
+        "en": "trousers / pants",
+        "sv": "byxor"
+      },
+      {
+        "word": "チーズ",
+        "en": "cheese",
+        "sv": "ost"
+      },
+      {
+        "word": "ジャズ",
+        "en": "jazz",
+        "sv": "jazz"
+      }
+    ],
+    "id": 54
+  },
+  {
+    "kana": "ゼ",
+    "romaji": "ze",
+    "type": "dakuten",
+    "row_type": "z-row",
+    "words": [
+      {
+        "word": "ゼロ",
+        "en": "zero",
+        "sv": "noll"
+      },
+      {
+        "word": "ゼリー",
+        "en": "jelly",
+        "sv": "gelé"
+      },
+      {
+        "word": "ゼミ",
+        "en": "seminar",
+        "sv": "seminarium"
+      }
+    ],
+    "id": 55
+  },
+  {
+    "kana": "ゾ",
+    "romaji": "zo",
+    "type": "dakuten",
+    "row_type": "z-row",
+    "words": [
+      {
+        "word": "ゾーン",
+        "en": "zone",
+        "sv": "zon"
+      },
+      {
+        "word": "アマゾン",
+        "en": "Amazon",
+        "sv": "Amazon"
+      },
+      {
+        "word": "リゾット",
+        "en": "risotto",
+        "sv": "risotto"
+      }
+    ],
+    "id": 56
+  },
+  {
+    "kana": "ダ",
+    "romaji": "da",
+    "type": "dakuten",
+    "row_type": "d-row",
+    "words": [
+      {
+        "word": "ダンス",
+        "en": "dance",
+        "sv": "dans"
+      },
+      {
+        "word": "サラダ",
+        "en": "salad",
+        "sv": "sallad"
+      },
+      {
+        "word": "パンダ",
+        "en": "panda",
+        "sv": "panda"
+      }
+    ],
+    "id": 57
+  },
+  {
+    "kana": "ヂ",
+    "romaji": "ji",
+    "type": "dakuten",
+    "row_type": "d-row",
+    "words": [
+      {
+        "word": "ハナヂ",
+        "en": "nosebleed",
+        "sv": "näsblod"
+      },
+      {
+        "word": "ヂエチレングリコール",
+        "en": "diethylene glycol",
+        "sv": "dietylenglykol"
+      },
+      {
+        "word": "ヂンギスカン",
+        "en": "Genghis Khan (dish)",
+        "sv": "Jingisukan"
+      }
+    ],
+    "id": 58
+  },
+  {
+    "kana": "ヅ",
+    "romaji": "zu",
+    "type": "dakuten",
+    "row_type": "d-row",
+    "words": [
+      {
+        "word": "カンヅメ",
+        "en": "canned food",
+        "sv": "konservburk"
+      },
+      {
+        "word": "ハナヅマリカナ",
+        "en": "nasal congestion",
+        "sv": "nästäppa"
+      },
+      {
+        "word": "ブラジリアン柔術",
+        "en": "Brazilian Jiu-Jitsu",
+        "sv": "brasiliansk jiu-jitsu"
+      }
+    ],
+    "id": 59
+  },
+  {
+    "kana": "デ",
+    "romaji": "de",
+    "type": "dakuten",
+    "row_type": "d-row",
+    "words": [
+      {
+        "word": "デスク",
+        "en": "desk",
+        "sv": "skrivbord"
+      },
+      {
+        "word": "デザイン",
+        "en": "design",
+        "sv": "design"
+      },
+      {
+        "word": "モデル",
+        "en": "model",
+        "sv": "modell"
+      }
+    ],
+    "id": 60
+  },
+  {
+    "kana": "ド",
+    "romaji": "do",
+    "type": "dakuten",
+    "row_type": "d-row",
+    "words": [
+      {
+        "word": "ドア",
+        "en": "door",
+        "sv": "dörr"
+      },
+      {
+        "word": "ドル",
+        "en": "dollar",
+        "sv": "dollar"
+      },
+      {
+        "word": "ハンド",
+        "en": "hand",
+        "sv": "hand"
+      }
+    ],
+    "id": 61
+  },
+  {
+    "kana": "バ",
+    "romaji": "ba",
+    "type": "dakuten",
+    "row_type": "b-row",
+    "words": [
+      {
+        "word": "バナナ",
+        "en": "banana",
+        "sv": "banan"
+      },
+      {
+        "word": "バス",
+        "en": "bus",
+        "sv": "buss"
+      },
+      {
+        "word": "アルバイト",
+        "en": "part-time job",
+        "sv": "deltidsjobb"
+      }
+    ],
+    "id": 62
+  },
+  {
+    "kana": "ビ",
+    "romaji": "bi",
+    "type": "dakuten",
+    "row_type": "b-row",
+    "words": [
+      {
+        "word": "ビール",
+        "en": "beer",
+        "sv": "öl"
+      },
+      {
+        "word": "ビジネス",
+        "en": "business",
+        "sv": "business / affärer"
+      },
+      {
+        "word": "テレビ",
+        "en": "television",
+        "sv": "TV"
+      }
+    ],
+    "id": 63
+  },
+  {
+    "kana": "ブ",
+    "romaji": "bu",
+    "type": "dakuten",
+    "row_type": "b-row",
+    "words": [
+      {
+        "word": "ブログ",
+        "en": "blog",
+        "sv": "blogg"
+      },
+      {
+        "word": "テーブル",
+        "en": "table",
+        "sv": "bord"
+      },
+      {
+        "word": "オリーブ",
+        "en": "olive",
+        "sv": "oliv"
+      }
+    ],
+    "id": 64
+  },
+  {
+    "kana": "ベ",
+    "romaji": "be",
+    "type": "dakuten",
+    "row_type": "b-row",
+    "words": [
+      {
+        "word": "ベッド",
+        "en": "bed",
+        "sv": "säng"
+      },
+      {
+        "word": "ベルギー",
+        "en": "Belgium",
+        "sv": "Belgien"
+      },
+      {
+        "word": "ベース",
+        "en": "base",
+        "sv": "bas"
+      }
+    ],
+    "id": 65
+  },
+  {
+    "kana": "ボ",
+    "romaji": "bo",
+    "type": "dakuten",
+    "row_type": "b-row",
+    "words": [
+      {
+        "word": "ボタン",
+        "en": "button",
+        "sv": "knapp"
+      },
+      {
+        "word": "ボール",
+        "en": "ball",
+        "sv": "boll"
+      },
+      {
+        "word": "ロボット",
+        "en": "robot",
+        "sv": "robot"
+      }
+    ],
+    "id": 66
+  },
+  {
+    "kana": "パ",
+    "romaji": "pa",
+    "type": "handakuten",
+    "row_type": "p-row",
+    "words": [
+      {
+        "word": "パン",
+        "en": "bread",
+        "sv": "bröd"
+      },
+      {
+        "word": "パスタ",
+        "en": "pasta",
+        "sv": "pasta"
+      },
+      {
+        "word": "スーパー",
+        "en": "supermarket",
+        "sv": "supermarket"
+      }
+    ],
+    "id": 67
+  },
+  {
+    "kana": "ピ",
+    "romaji": "pi",
+    "type": "handakuten",
+    "row_type": "p-row",
+    "words": [
+      {
+        "word": "ピアノ",
+        "en": "piano",
+        "sv": "piano"
+      },
+      {
+        "word": "ピンク",
+        "en": "pink",
+        "sv": "rosa"
+      },
+      {
+        "word": "オリンピック",
+        "en": "Olympics",
+        "sv": "OS / Olympiska spelen"
+      }
+    ],
+    "id": 68
+  },
+  {
+    "kana": "プ",
+    "romaji": "pu",
+    "type": "handakuten",
+    "row_type": "p-row",
+    "words": [
+      {
+        "word": "プール",
+        "en": "pool",
+        "sv": "pool"
+      },
+      {
+        "word": "プレゼント",
+        "en": "present",
+        "sv": "present"
+      },
+      {
+        "word": "スープ",
+        "en": "soup",
+        "sv": "soppa"
+      }
+    ],
+    "id": 69
+  },
+  {
+    "kana": "ペ",
+    "romaji": "pe",
+    "type": "handakuten",
+    "row_type": "p-row",
+    "words": [
+      {
+        "word": "ペン",
+        "en": "pen",
+        "sv": "penna"
+      },
+      {
+        "word": "ペット",
+        "en": "pet",
+        "sv": "husdjur"
+      },
+      {
+        "word": "オペラ",
+        "en": "opera",
+        "sv": "opera"
+      }
+    ],
+    "id": 70
+  },
+  {
+    "kana": "ポ",
+    "romaji": "po",
+    "type": "handakuten",
+    "row_type": "p-row",
+    "words": [
+      {
+        "word": "ポスト",
+        "en": "mailbox / post",
+        "sv": "brevlåda"
+      },
+      {
+        "word": "ポケット",
+        "en": "pocket",
+        "sv": "ficka"
+      },
+      {
+        "word": "スポーツ",
+        "en": "sports",
+        "sv": "sport"
+      }
+    ],
+    "id": 71
+  },
+  {
+    "kana": "キャ",
+    "romaji": "kya",
+    "type": "youon",
+    "row_type": "ky-row",
+    "words": [
+      {
+        "word": "キャンプ",
+        "en": "camping",
+        "sv": "camping"
+      },
+      {
+        "word": "キャベツ",
+        "en": "cabbage",
+        "sv": "vitkål"
+      },
+      {
+        "word": "キャリア",
+        "en": "career",
+        "sv": "karriär"
+      }
+    ],
+    "id": 72
+  },
+  {
+    "kana": "キュ",
+    "romaji": "kyu",
+    "type": "youon",
+    "row_type": "ky-row",
+    "words": [
+      {
+        "word": "キューブ",
+        "en": "cube",
+        "sv": "kub"
+      },
+      {
+        "word": "バーベキュー",
+        "en": "barbecue",
+        "sv": "grillning"
+      },
+      {
+        "word": "フィギュア",
+        "en": "figure / figurine",
+        "sv": "figur"
+      }
+    ],
+    "id": 73
+  },
+  {
+    "kana": "キョ",
+    "romaji": "kyo",
+    "type": "youon",
+    "row_type": "ky-row",
+    "words": [
+      {
+        "word": "キョウト",
+        "en": "Kyoto",
+        "sv": "Kyoto"
+      },
+      {
+        "word": "キャニオン",
+        "en": "canyon",
+        "sv": "canyon"
+      },
+      {
+        "word": "プロキオン",
+        "en": "Procyon",
+        "sv": "Procyon"
+      }
+    ],
+    "id": 74
+  },
+  {
+    "kana": "シャ",
+    "romaji": "sha",
+    "type": "youon",
+    "row_type": "sh-row",
+    "words": [
+      {
+        "word": "シャツ",
+        "en": "shirt",
+        "sv": "skjorta"
+      },
+      {
+        "word": "シャンプー",
+        "en": "shampoo",
+        "sv": "schampo"
+      },
+      {
+        "word": "オシャレ",
+        "en": "fashionable",
+        "sv": "modern / stilig"
+      }
+    ],
+    "id": 75
+  },
+  {
+    "kana": "シュ",
+    "romaji": "shu",
+    "type": "youon",
+    "row_type": "sh-row",
+    "words": [
+      {
+        "word": "シューズ",
+        "en": "shoes",
+        "sv": "skor"
+      },
+      {
+        "word": "シュガー",
+        "en": "sugar",
+        "sv": "socker"
+      },
+      {
+        "word": "キャッシュ",
+        "en": "cash",
+        "sv": "kontanter"
+      }
+    ],
+    "id": 76
+  },
+  {
+    "kana": "ショ",
+    "romaji": "sho",
+    "type": "youon",
+    "row_type": "sh-row",
+    "words": [
+      {
+        "word": "ショールーム",
+        "en": "showroom",
+        "sv": "utställningslokal"
+      },
+      {
+        "word": "マンション",
+        "en": "apartment building",
+        "sv": "lägenhetshus"
+      },
+      {
+        "word": "ショップ",
+        "en": "shop",
+        "sv": "butik"
+      }
+    ],
+    "id": 77
+  },
+  {
+    "kana": "チャ",
+    "romaji": "cha",
+    "type": "youon",
+    "row_type": "ch-row",
+    "words": [
+      {
+        "word": "チャンス",
+        "en": "chance",
+        "sv": "chans"
+      },
+      {
+        "word": "チャイナ",
+        "en": "China",
+        "sv": "Kina"
+      },
+      {
+        "word": "お茶",
+        "en": "tea",
+        "sv": "te"
+      }
+    ],
+    "id": 78
+  },
+  {
+    "kana": "チュ",
+    "romaji": "chu",
+    "type": "youon",
+    "row_type": "ch-row",
+    "words": [
+      {
+        "word": "チューブ",
+        "en": "tube",
+        "sv": "tub / rör"
+      },
+      {
+        "word": "チューリップ",
+        "en": "tulip",
+        "sv": "tulpan"
+      },
+      {
+        "word": "アマチュア",
+        "en": "amateur",
+        "sv": "amatör"
+      }
+    ],
+    "id": 79
+  },
+  {
+    "kana": "チョ",
+    "romaji": "cho",
+    "type": "youon",
+    "row_type": "ch-row",
+    "words": [
+      {
+        "word": "チョコ",
+        "en": "chocolate",
+        "sv": "choklad"
+      },
+      {
+        "word": "チョーク",
+        "en": "chalk",
+        "sv": "krita"
+      },
+      {
+        "word": "マッチョ",
+        "en": "muscular / macho",
+        "sv": "muskulös"
+      }
+    ],
+    "id": 80
+  },
+  {
+    "kana": "ニャ",
+    "romaji": "nya",
+    "type": "youon",
+    "row_type": "ny-row",
+    "words": [
+      {
+        "word": "ニャー",
+        "en": "meow",
+        "sv": "mjaou"
+      },
+      {
+        "word": "ケニア",
+        "en": "Kenya",
+        "sv": "Kenya"
+      },
+      {
+        "word": "コニャック",
+        "en": "cognac",
+        "sv": "konjak"
+      }
+    ],
+    "id": 81
+  },
+  {
+    "kana": "ニュ",
+    "romaji": "nyu",
+    "type": "youon",
+    "row_type": "ny-row",
+    "words": [
+      {
+        "word": "ニュース",
+        "en": "news",
+        "sv": "nyheter"
+      },
+      {
+        "word": "メニュー",
+        "en": "menu",
+        "sv": "meny"
+      },
+      {
+        "word": "ニュアンス",
+        "en": "nuance",
+        "sv": "nyans"
+      }
+    ],
+    "id": 82
+  },
+  {
+    "kana": "ニョ",
+    "romaji": "nyo",
+    "type": "youon",
+    "row_type": "ny-row",
+    "words": [
+      {
+        "word": "ニョッキ",
+        "en": "gnocchi",
+        "sv": "gnocchi"
+      },
+      {
+        "word": "キャニオン",
+        "en": "canyon",
+        "sv": "canyon"
+      },
+      {
+        "word": "ビニョール",
+        "en": "Bignoles",
+        "sv": "Bignoles"
+      }
+    ],
+    "id": 83
+  },
+  {
+    "kana": "ヒャ",
+    "romaji": "hya",
+    "type": "youon",
+    "row_type": "hy-row",
+    "words": [
+      {
+        "word": "ヒャク",
+        "en": "hundred",
+        "sv": "hundra"
+      },
+      {
+        "word": "ヒヤシンス",
+        "en": "hyacinth",
+        "sv": "hyacint"
+      },
+      {
+        "word": "シャヒャール",
+        "en": "Shahyar",
+        "sv": "Shahyar"
+      }
+    ],
+    "id": 84
+  },
+  {
+    "kana": "ヒュ",
+    "romaji": "hyu",
+    "type": "youon",
+    "row_type": "hy-row",
+    "words": [
+      {
+        "word": "ヒューズ",
+        "en": "fuse",
+        "sv": "säkring"
+      },
+      {
+        "word": "ヒューマン",
+        "en": "human",
+        "sv": "mänsklig"
+      },
+      {
+        "word": "ヒューストン",
+        "en": "Houston",
+        "sv": "Houston"
+      }
+    ],
+    "id": 85
+  },
+  {
+    "kana": "ヒョ",
+    "romaji": "hyo",
+    "type": "youon",
+    "row_type": "hy-row",
+    "words": [
+      {
+        "word": "ヒョウ",
+        "en": "leopard",
+        "sv": "leopard"
+      },
+      {
+        "word": "ヒョウガ",
+        "en": "glacier",
+        "sv": "glaciär"
+      },
+      {
+        "word": "チョウヒョウ",
+        "en": "form / report",
+        "sv": "rapport"
+      }
+    ],
+    "id": 86
+  },
+  {
+    "kana": "ミャ",
+    "romaji": "mya",
+    "type": "youon",
+    "row_type": "my-row",
+    "words": [
+      {
+        "word": "ミャンマー",
+        "en": "Myanmar",
+        "sv": "Myanmar"
+      },
+      {
+        "word": "ミャオ",
+        "en": "meow",
+        "sv": "mjaou"
+      },
+      {
+        "word": "キャミソール",
+        "en": "camisole",
+        "sv": "linne"
+      }
+    ],
+    "id": 87
+  },
+  {
+    "kana": "ミュ",
+    "romaji": "myu",
+    "type": "youon",
+    "row_type": "my-row",
+    "words": [
+      {
+        "word": "ミュージアム",
+        "en": "museum",
+        "sv": "museum"
+      },
+      {
+        "word": "ミュージック",
+        "en": "music",
+        "sv": "musik"
+      },
+      {
+        "word": "コミュニティ",
+        "en": "community",
+        "sv": "samhälle / gemenskap"
+      }
+    ],
+    "id": 88
+  },
+  {
+    "kana": "ミョ",
+    "romaji": "myo",
+    "type": "youon",
+    "row_type": "my-row",
+    "words": [
+      {
+        "word": "ミョウガ",
+        "en": "myoga (Japanese ginger)",
+        "sv": "myoga"
+      },
+      {
+        "word": "ミョウバン",
+        "en": "alum",
+        "sv": "alun"
+      },
+      {
+        "word": "ミョウジョウ",
+        "en": "morning star",
+        "sv": "morgonstjärna"
+      }
+    ],
+    "id": 89
+  },
+  {
+    "kana": "リャ",
+    "romaji": "rya",
+    "type": "youon",
+    "row_type": "ry-row",
+    "words": [
+      {
+        "word": "リャマ",
+        "en": "llama",
+        "sv": "llama"
+      },
+      {
+        "word": "ギャラリー",
+        "en": "gallery",
+        "sv": "galleri"
+      },
+      {
+        "word": "マテリアル",
+        "en": "material",
+        "sv": "material"
+      }
+    ],
+    "id": 90
+  },
+  {
+    "kana": "リュ",
+    "romaji": "ryu",
+    "type": "youon",
+    "row_type": "ry-row",
+    "words": [
+      {
+        "word": "リュックサック",
+        "en": "backpack",
+        "sv": "ryggsäck"
+      },
+      {
+        "word": "ボリューム",
+        "en": "volume",
+        "sv": "volym"
+      },
+      {
+        "word": "バリュー",
+        "en": "value",
+        "sv": "värde"
+      }
+    ],
+    "id": 91
+  },
+  {
+    "kana": "リョ",
+    "romaji": "ryo",
+    "type": "youon",
+    "row_type": "ry-row",
+    "words": [
+      {
+        "word": "リョウリ",
+        "en": "cooking / cuisine",
+        "sv": "matlagning"
+      },
+      {
+        "word": "リョカン",
+        "en": "ryokan (Japanese inn)",
+        "sv": "ryokan"
+      },
+      {
+        "word": "リョコウ",
+        "en": "travel",
+        "sv": "resa"
+      }
+    ],
+    "id": 92
+  },
+  {
+    "kana": "ギャ",
+    "romaji": "gya",
+    "type": "youon",
+    "row_type": "gy-row",
+    "words": [
+      {
+        "word": "ギャング",
+        "en": "gang",
+        "sv": "gäng"
+      },
+      {
+        "word": "ギャラリー",
+        "en": "gallery",
+        "sv": "galleri"
+      },
+      {
+        "word": "ギャップ",
+        "en": "gap",
+        "sv": "gap / klyfta"
+      }
+    ],
+    "id": 93
+  },
+  {
+    "kana": "ギュ",
+    "romaji": "gyu",
+    "type": "youon",
+    "row_type": "gy-row",
+    "words": [
+      {
+        "word": "ギュウニュウ",
+        "en": "milk",
+        "sv": "mjölk"
+      },
+      {
+        "word": "フィギュア",
+        "en": "figure",
+        "sv": "figur"
+      },
+      {
+        "word": "レギュラ",
+        "en": "regular",
+        "sv": "regelbunden"
+      }
+    ],
+    "id": 94
+  },
+  {
+    "kana": "ギョ",
+    "romaji": "gyo",
+    "type": "youon",
+    "row_type": "gy-row",
+    "words": [
+      {
+        "word": "ギョーザ",
+        "en": "gyoza / dumpling",
+        "sv": "gyoza"
+      },
+      {
+        "word": "ギョギョウ",
+        "en": "fishing industry",
+        "sv": "fiskeindustri"
+      },
+      {
+        "word": "フィギュア",
+        "en": "figure",
+        "sv": "figur"
+      }
+    ],
+    "id": 95
+  },
+  {
+    "kana": "ジャ",
+    "romaji": "ja",
+    "type": "youon",
+    "row_type": "j-row",
+    "words": [
+      {
+        "word": "ジャケット",
+        "en": "jacket",
+        "sv": "jacka"
+      },
+      {
+        "word": "ジャム",
+        "en": "jam",
+        "sv": "sylt"
+      },
+      {
+        "word": "パジャマ",
+        "en": "pyjamas",
+        "sv": "pyjamas"
+      }
+    ],
+    "id": 96
+  },
+  {
+    "kana": "ジュ",
+    "romaji": "ju",
+    "type": "youon",
+    "row_type": "j-row",
+    "words": [
+      {
+        "word": "ジュース",
+        "en": "juice",
+        "sv": "juice"
+      },
+      {
+        "word": "ジュエリー",
+        "en": "jewelry",
+        "sv": "smycken"
+      },
+      {
+        "word": "カジュアル",
+        "en": "casual",
+        "sv": "vardaglig"
+      }
+    ],
+    "id": 97
+  },
+  {
+    "kana": "ジョ",
+    "romaji": "jo",
+    "type": "youon",
+    "row_type": "j-row",
+    "words": [
+      {
+        "word": "ジョギング",
+        "en": "jogging",
+        "sv": "joggning"
+      },
+      {
+        "word": "ジョーカー",
+        "en": "joker",
+        "sv": "joker"
+      },
+      {
+        "word": "エンジョイ",
+        "en": "enjoy",
+        "sv": "njuta"
+      }
+    ],
+    "id": 98
+  },
+  {
+    "kana": "ビャ",
+    "romaji": "bya",
+    "type": "youon",
+    "row_type": "by-row",
+    "words": [
+      {
+        "word": "ビャッコ",
+        "en": "white tiger",
+        "sv": "vit tiger"
+      },
+      {
+        "word": "ビャクダン",
+        "en": "sandalwood",
+        "sv": "sandelträ"
+      },
+      {
+        "word": "ロビャン",
+        "en": "Lobbying",
+        "sv": "lobbyverksamhet"
+      }
+    ],
+    "id": 99
+  },
+  {
+    "kana": "ビュ",
+    "romaji": "byu",
+    "type": "youon",
+    "row_type": "by-row",
+    "words": [
+      {
+        "word": "ビューティー",
+        "en": "beauty",
+        "sv": "skönhet"
+      },
+      {
+        "word": "ビュッフェ",
+        "en": "buffet",
+        "sv": "buffé"
+      },
+      {
+        "word": "レビュー",
+        "en": "review",
+        "sv": "recension"
+      }
+    ],
+    "id": 100
+  },
+  {
+    "kana": "ビョ",
+    "romaji": "byo",
+    "type": "youon",
+    "row_type": "by-row",
+    "words": [
+      {
+        "word": "ビョーイン",
+        "en": "hospital",
+        "sv": "sjukhus"
+      },
+      {
+        "word": "ビョウキ",
+        "en": "illness",
+        "sv": "sjukdom"
+      },
+      {
+        "word": "インタビュー",
+        "en": "interview",
+        "sv": "intervju"
+      }
+    ],
+    "id": 101
+  },
+  {
+    "kana": "ピャ",
+    "romaji": "pya",
+    "type": "youon",
+    "row_type": "py-row",
+    "words": [
+      {
+        "word": "ハッピャク",
+        "en": "eight hundred",
+        "sv": "åtta hundra"
+      },
+      {
+        "word": "ピャー",
+        "en": "sound of screaming",
+        "sv": "skrikande ljud"
+      },
+      {
+        "word": "チャンピャン",
+        "en": "champion (variant)",
+        "sv": "mästare"
+      }
+    ],
+    "id": 102
+  },
+  {
+    "kana": "ピュ",
+    "romaji": "pyu",
+    "type": "youon",
+    "row_type": "py-row",
+    "words": [
+      {
+        "word": "コンピュータ",
+        "en": "computer",
+        "sv": "dator"
+      },
+      {
+        "word": "ピューマ",
+        "en": "puma",
+        "sv": "puma"
+      },
+      {
+        "word": "ピュア",
+        "en": "pure",
+        "sv": "ren"
+      }
+    ],
+    "id": 103
+  },
+  {
+    "kana": "ピョ",
+    "romaji": "pyo",
+    "type": "youon",
+    "row_type": "py-row",
+    "words": [
+      {
+        "word": "ハッピョウ",
+        "en": "presentation / announcement",
+        "sv": "presentation"
+      },
+      {
+        "word": "ピョコピョコ",
+        "en": "hopping around",
+        "sv": "hoppande"
+      },
+      {
+        "word": "ロッピャク",
+        "en": "six hundred",
+        "sv": "sex hundra"
+      }
+    ],
+    "id": 104
   }
 ]

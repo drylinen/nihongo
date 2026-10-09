@@ -48,6 +48,9 @@ function populateBrowseView() {
         rows[rowType].forEach(item => {
             const card = document.createElement('div');
             card.className = 'kana-card';
+            if (item.type === 'youon') {
+                card.classList.add('kana-card--wide');
+            }
 
             const leftHalf = document.createElement('div');
             leftHalf.className = 'kana-half kana-side';
