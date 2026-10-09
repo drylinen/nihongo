@@ -1,9 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
     const hamburgerMenu = document.getElementById('hamburger-menu');
     const nav = document.querySelector('nav');
+    const modal = document.getElementById('kana-modal');
+    const modalBody = document.getElementById('modal-body');
 
     hamburgerMenu.addEventListener('click', () => {
         nav.classList.toggle('open');
+    });
+
+    // Close modal on button click
+    document.getElementById('modal-close').addEventListener('click', () => {
+        modal.classList.remove('open');
+    });
+
+    // Close modal on backdrop click
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('open');
+        }
     });
 
     document.querySelectorAll('nav ul li a').forEach(link => {
@@ -63,12 +77,46 @@ function populateBrowseView() {
 
             card.appendChild(leftHalf);
             card.appendChild(rightHalf);
+
+            card.addEventListener('click', () => showKanaModal(item));
+
             containerElement.appendChild(card);
         });
 
         rowElement.appendChild(containerElement);
         browseView.appendChild(rowElement);
     }
+}
+
+function showKanaModal(item) {
+    const modalBody = document.getElementById('modal-body');
+    const modal = document.getElementById('kana-modal');
+
+    // Build words HTML
+    let wordsHtml = '';
+    if (item.words && item.words.length > 0) {
+        wordsHtml = `
+            <div class="modal-words">
+                <h3>Words</h3>
+                ${item.words.map(w => `
+                    <div class="modal-word-item">
+                        <div class="modal-word-kana">${w.word}</div>
+                        <div class="modal-word-en">${w.en}</div>
+                        <div class="modal-word-sv">${w.sv}</div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
+
+    modalBody.innerHTML = `
+        <div class="modal-kana">${item.kana}</div>
+        <div class="modal-romaji">${item.romaji}</div>
+        <div class="modal-type">${item.type}</div>
+        ${wordsHtml}
+    `;
+
+    modal.classList.add('open');
 }
 
 /* ── Quiz Logic ── */
