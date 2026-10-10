@@ -251,7 +251,7 @@ function renderScore() {
     const restartBtn = document.createElement('button');
     restartBtn.id = 'quiz-restart';
     restartBtn.textContent = 'Try Again';
-    restartBtn.addEventListener('click', startQuiz);
+    restartBtn.addEventListener('click', renderWelcomeStep);
     container.appendChild(restartBtn);
 
     quizView.appendChild(container);
