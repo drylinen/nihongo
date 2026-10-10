@@ -229,7 +229,7 @@ main {
     margin: 2rem 0;
 }
 
-#quiz-restart {
+#quiz-restart, #quiz-start {
     padding: 0.75rem 2rem;
     font-size: 1rem;
     background-color: #1e88e5;
@@ -239,7 +239,7 @@ main {
     cursor: pointer;
 }
 
-#quiz-restart:hover {
+#quiz-restart:hover, #quiz-start:hover {
     background-color: #1565c0;
 }
 

@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Initialize quiz when navigating to quiz view
             if (viewId === 'katakana-quiz') {
-                startQuiz();
+                renderWelcomeStep();
             }
         });
     });
@@ -253,6 +253,28 @@ function renderScore() {
     restartBtn.textContent = 'Try Again';
     restartBtn.addEventListener('click', startQuiz);
     container.appendChild(restartBtn);
+
+    quizView.appendChild(container);
+}
+
+function renderWelcomeStep() {
+    const quizView = document.getElementById('katakana-quiz-view');
+    quizView.innerHTML = '';
+
+    const container = document.createElement('div');
+    container.id = 'quiz-container';
+
+    const welcomeText = document.createElement('h2');
+    welcomeText.textContent = 'Welcome to the Katakana Quiz!';
+    container.appendChild(welcomeText);
+
+    const startBtn = document.createElement('button');
+    startBtn.id = 'quiz-start';
+    startBtn.textContent = 'Start';
+    startBtn.addEventListener('click', () => {
+        startQuiz();
+    });
+    container.appendChild(startBtn);
 
     quizView.appendChild(container);
 }
