@@ -121,32 +121,62 @@ let quizState = {
     answered: false
 };
 
+// Flatten all words from every katakana entry into one pool
+function getAllWords() {
+    const all = [];
+    katakana.forEach(item => {
+        if (item.words) {
+            item.words.forEach(w => {
+                all.push({ word: w.word, sv: w.sv, en: w.en });
+            });
+        }
+    });
+    return all;
+}
+
 function startQuiz(mode = 'jp-to-romaji') {
     const quizView = document.getElementById('katakana-quiz-view');
     quizView.innerHTML = '';
 
-    // Build a shuffled pool and pick QUIZ_LENGTH unique questions
-    const shuffled = [...katakana].sort(() => Math.random() - 0.5);
-    quizState.questions = shuffled.slice(0, QUIZ_LENGTH).map(item => {
-        // Pick 2 wrong distractors from the remaining items
-        const others = katakana.filter(k => k.id !== item.id);
-        const distractors = others.sort(() => Math.random() - 0.5).slice(0, 2);
-        const optionsList = [item, ...distractors].sort(() => Math.random() - 0.5);
+    if (mode === 'jp-to-sv') {
+        // Word-based quiz: Japanese word → Swedish translation
+        const allWords = getAllWords();
+        const shuffled = [...allWords].sort(() => Math.random() - 0.5);
+        quizState.questions = shuffled.slice(0, QUIZ_LENGTH).map(item => {
+            // Pick 2 wrong distractors from the remaining words
+            const others = allWords.filter(w => w.word !== item.word);
+            const distractors = others.sort(() => Math.random() - 0.5).slice(0, 2);
+            const optionsList = [item, ...distractors].sort(() => Math.random() - 0.5);
+            return {
+                display: item.word,
+                correct: item.sv,
+                options: optionsList.map(o => o.sv)
+            };
+        });
+    } else {
+        // Original kana-based quiz modes
+        const shuffled = [...katakana].sort(() => Math.random() - 0.5);
+        quizState.questions = shuffled.slice(0, QUIZ_LENGTH).map(item => {
+            // Pick 2 wrong distractors from the remaining items
+            const others = katakana.filter(k => k.id !== item.id);
+            const distractors = others.sort(() => Math.random() - 0.5).slice(0, 2);
+            const optionsList = [item, ...distractors].sort(() => Math.random() - 0.5);
 
-        if (mode === 'jp-to-romaji') {
-            return {
-                display: item.kana,
-                correct: item.romaji,
-                options: optionsList.map(o => o.romaji)
-            };
-        } else {
-            return {
-                display: item.romaji,
-                correct: item.kana,
-                options: optionsList.map(o => o.kana)
-            };
-        }
-    });
+            if (mode === 'jp-to-romaji') {
+                return {
+                    display: item.kana,
+                    correct: item.romaji,
+                    options: optionsList.map(o => o.romaji)
+                };
+            } else {
+                return {
+                    display: item.romaji,
+                    correct: item.kana,
+                    options: optionsList.map(o => o.kana)
+                };
+            }
+        });
+    }
 
     quizState.currentStep = 0;
     quizState.score = 0;
@@ -275,10 +305,6 @@ function renderWelcomeStep() {
     const container = document.createElement('div');
     container.id = 'quiz-container';
 
-    const welcomeText = document.createElement('h2');
-    welcomeText.textContent = 'Welcome to the Katakana Quiz!';
-    container.appendChild(welcomeText);
-
     const optionsContainer = document.createElement('div');
     optionsContainer.id = 'quiz-options';
 
@@ -295,6 +321,13 @@ function renderWelcomeStep() {
     btn2.textContent = 'Romaji \u2192 Kana';
     btn2.addEventListener('click', () => startQuiz('romaji-to-jp'));
     optionsContainer.appendChild(btn2);
+
+    // Mode 3: Japanese --> Swedish
+    const btn3 = document.createElement('button');
+    btn3.className = 'quiz-option';
+    btn3.textContent = 'Japanese \u2192 Swedish';
+    btn3.addEventListener('click', () => startQuiz('jp-to-sv'));
+    optionsContainer.appendChild(btn3);
 
     container.appendChild(optionsContainer);
 
