@@ -1,12 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerMenu = document.getElementById('hamburger-menu');
-    const nav = document.querySelector('nav');
     const modal = document.getElementById('kana-modal');
-    const modalBody = document.getElementById('modal-body');
-
-    hamburgerMenu.addEventListener('click', () => {
-        nav.classList.toggle('open');
-    });
 
     // Close modal on button click
     document.getElementById('modal-close').addEventListener('click', () => {
@@ -20,17 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    document.querySelectorAll('nav ul li a').forEach(link => {
+    document.querySelectorAll('#menu-row a').forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
             const viewId = link.getAttribute('data-view');
             document.querySelector('.view.active').classList.remove('active');
             document.getElementById(`${viewId}-view`).classList.add('active');
-            nav.classList.remove('open'); // Close the menu after navigation
 
             // Initialize quiz when navigating to quiz view
             if (viewId === 'katakana-quiz') {
-                startQuiz();
+                renderWelcomeStep();
             }
         });
     });
@@ -129,7 +121,7 @@ let quizState = {
     answered: false
 };
 
-function startQuiz() {
+function startQuiz(mode = 'jp-to-romaji') {
     const quizView = document.getElementById('katakana-quiz-view');
     quizView.innerHTML = '';
 
@@ -139,12 +131,21 @@ function startQuiz() {
         // Pick 2 wrong distractors from the remaining items
         const others = katakana.filter(k => k.id !== item.id);
         const distractors = others.sort(() => Math.random() - 0.5).slice(0, 2);
-        const options = [item, ...distractors].sort(() => Math.random() - 0.5);
-        return {
-            kana: item.kana,
-            correctRomaji: item.romaji,
-            options: options.map(o => o.romaji)
-        };
+        const optionsList = [item, ...distractors].sort(() => Math.random() - 0.5);
+
+        if (mode === 'jp-to-romaji') {
+            return {
+                display: item.kana,
+                correct: item.romaji,
+                options: optionsList.map(o => o.romaji)
+            };
+        } else {
+            return {
+                display: item.romaji,
+                correct: item.kana,
+                options: optionsList.map(o => o.kana)
+            };
+        }
     });
 
     quizState.currentStep = 0;
@@ -171,10 +172,10 @@ function renderQuizStep() {
     progress.textContent = `Question ${step + 1} of ${QUIZ_LENGTH}`;
     container.appendChild(progress);
 
-    // Kana character
+    // Character display
     const kanaDisplay = document.createElement('div');
     kanaDisplay.id = 'quiz-kana';
-    kanaDisplay.textContent = question.kana;
+    kanaDisplay.textContent = question.display;
     container.appendChild(kanaDisplay);
 
     // Options
@@ -185,7 +186,7 @@ function renderQuizStep() {
         const btn = document.createElement('button');
         btn.className = 'quiz-option';
         btn.textContent = option;
-        btn.addEventListener('click', () => handleAnswer(btn, option, question.correctRomaji, optionsContainer));
+        btn.addEventListener('click', () => handleAnswer(btn, option, question.correct, optionsContainer));
         optionsContainer.appendChild(btn);
     });
 
@@ -219,6 +220,18 @@ function handleAnswer(clickedBtn, selected, correct, optionsContainer) {
     if (selected === correct) {
         clickedBtn.classList.add('correct');
         quizState.score++;
+        // Disable all buttons
+        allButtons.forEach(btn => btn.classList.add('disabled'));
+        // Auto-advance to next question after a short delay
+        setTimeout(() => {
+            quizState.currentStep++;
+            if (quizState.currentStep < QUIZ_LENGTH) {
+                quizState.answered = false;
+                renderQuizStep();
+            } else {
+                renderScore();
+            }
+        }, 200);
     } else {
         clickedBtn.classList.add('wrong');
         // Highlight the correct answer in green
@@ -227,13 +240,11 @@ function handleAnswer(clickedBtn, selected, correct, optionsContainer) {
                 btn.classList.add('correct');
             }
         });
+        // Disable all buttons
+        allButtons.forEach(btn => btn.classList.add('disabled'));
+        // Show Next button only when wrong
+        document.getElementById('quiz-next').style.display = 'inline-block';
     }
-
-    // Disable all buttons
-    allButtons.forEach(btn => btn.classList.add('disabled'));
-
-    // Show Next button
-    document.getElementById('quiz-next').style.display = 'inline-block';
 }
 
 function renderScore() {
@@ -251,8 +262,41 @@ function renderScore() {
     const restartBtn = document.createElement('button');
     restartBtn.id = 'quiz-restart';
     restartBtn.textContent = 'Try Again';
-    restartBtn.addEventListener('click', startQuiz);
+    restartBtn.addEventListener('click', renderWelcomeStep);
     container.appendChild(restartBtn);
+
+    quizView.appendChild(container);
+}
+
+function renderWelcomeStep() {
+    const quizView = document.getElementById('katakana-quiz-view');
+    quizView.innerHTML = '';
+
+    const container = document.createElement('div');
+    container.id = 'quiz-container';
+
+    const welcomeText = document.createElement('h2');
+    welcomeText.textContent = 'Welcome to the Katakana Quiz!';
+    container.appendChild(welcomeText);
+
+    const optionsContainer = document.createElement('div');
+    optionsContainer.id = 'quiz-options';
+
+    // Mode 1: Kana --> Romaji
+    const btn1 = document.createElement('button');
+    btn1.className = 'quiz-option';
+    btn1.textContent = 'Kana \u2192 Romaji';
+    btn1.addEventListener('click', () => startQuiz('jp-to-romaji'));
+    optionsContainer.appendChild(btn1);
+
+    // Mode 2: Romaji --> Kana
+    const btn2 = document.createElement('button');
+    btn2.className = 'quiz-option';
+    btn2.textContent = 'Romaji \u2192 Kana';
+    btn2.addEventListener('click', () => startQuiz('romaji-to-jp'));
+    optionsContainer.appendChild(btn2);
+
+    container.appendChild(optionsContainer);
 
     quizView.appendChild(container);
 }
