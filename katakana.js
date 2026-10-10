@@ -203,9 +203,9 @@ const katakana = [
         "sv": "kaka"
       },
       {
-        "word": "スマートフォン",
-        "en": "smartphone",
-        "sv": "smartmobil"
+        "word": "ケース",
+        "en": "case / container",
+        "sv": "fodral / väska"
       },
       {
         "word": "ジャケット",
@@ -1403,14 +1403,14 @@ const katakana = [
         "sv": "konservburk"
       },
       {
-        "word": "ハナヅマリカナ",
-        "en": "nasal congestion",
-        "sv": "nästäppa"
+        "word": "ツルヅル",
+        "en": "slurping sound / slippery",
+        "sv": "sörplande ljud / hal"
       },
       {
-        "word": "ブラジリアン柔術",
-        "en": "Brazilian Jiu-Jitsu",
-        "sv": "brasiliansk jiu-jitsu"
+        "word": "ウミウヅキ",
+        "en": "seahorse",
+        "sv": "sjöhäst"
       }
     ],
     "id": 59
@@ -1744,9 +1744,9 @@ const katakana = [
         "sv": "grillning"
       },
       {
-        "word": "フィギュア",
-        "en": "figure / figurine",
-        "sv": "figur"
+        "word": "キュウリ",
+        "en": "cucumber",
+        "sv": "gurka"
       }
     ],
     "id": 73
@@ -1763,14 +1763,14 @@ const katakana = [
         "sv": "Kyoto"
       },
       {
-        "word": "キャニオン",
-        "en": "canyon",
-        "sv": "canyon"
+        "word": "キョロキョロ",
+        "en": "looking around restlessly",
+        "sv": "se sig omkring"
       },
       {
-        "word": "プロキオン",
-        "en": "Procyon",
-        "sv": "Procyon"
+        "word": "キョリ",
+        "en": "distance",
+        "sv": "avstånd"
       }
     ],
     "id": 74
@@ -1864,9 +1864,9 @@ const katakana = [
         "sv": "Kina"
       },
       {
-        "word": "お茶",
-        "en": "tea",
-        "sv": "te"
+        "word": "チャック",
+        "en": "zipper",
+        "sv": "blixtlås"
       }
     ],
     "id": 78
@@ -2248,7 +2248,7 @@ const katakana = [
         "sv": "figur"
       },
       {
-        "word": "レギュラ",
+        "word": "レギュラー",
         "en": "regular",
         "sv": "regelbunden"
       }
@@ -2272,9 +2272,9 @@ const katakana = [
         "sv": "fiskeindustri"
       },
       {
-        "word": "フィギュア",
-        "en": "figure",
-        "sv": "figur"
+        "word": "キンギョ",
+        "en": "goldfish",
+        "sv": "guldfisk"
       }
     ],
     "id": 95
@@ -2368,9 +2368,9 @@ const katakana = [
         "sv": "sandelträ"
       },
       {
-        "word": "ロビャン",
-        "en": "Lobbying",
-        "sv": "lobbyverksamhet"
+        "word": "ビャッコ",
+        "en": "white tiger",
+        "sv": "vit tiger"
       }
     ],
     "id": 99
@@ -2416,9 +2416,9 @@ const katakana = [
         "sv": "sjukdom"
       },
       {
-        "word": "インタビュー",
-        "en": "interview",
-        "sv": "intervju"
+        "word": "コウビョウ",
+        "en": "public cemetery",
+        "sv": "offentlig kyrkogård"
       }
     ],
     "id": 101
@@ -2440,9 +2440,9 @@ const katakana = [
         "sv": "skrikande ljud"
       },
       {
-        "word": "チャンピャン",
-        "en": "champion (variant)",
-        "sv": "mästare"
+        "word": "ピャーピャー",
+        "en": "chirping / squawking sound",
+        "sv": "kvittrande / skrikande ljud"
       }
     ],
     "id": 102
@@ -2454,9 +2454,9 @@ const katakana = [
     "row_type": "py-row",
     "words": [
       {
-        "word": "コンピュータ",
-        "en": "computer",
-        "sv": "dator"
+        "word": "ポピュラー",
+        "en": "popular",
+        "sv": "populär"
       },
       {
         "word": "ピューマ",
@@ -2488,9 +2488,9 @@ const katakana = [
         "sv": "hoppande"
       },
       {
-        "word": "ロッピャク",
-        "en": "six hundred",
-        "sv": "sex hundra"
+        "word": "ピョンピョン",
+        "en": "hopping / jumping up and down",
+        "sv": "oppande / skuttande upp och ner"
       }
     ],
     "id": 104
