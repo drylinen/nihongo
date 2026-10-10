@@ -220,6 +220,18 @@ function handleAnswer(clickedBtn, selected, correct, optionsContainer) {
     if (selected === correct) {
         clickedBtn.classList.add('correct');
         quizState.score++;
+        // Disable all buttons
+        allButtons.forEach(btn => btn.classList.add('disabled'));
+        // Auto-advance to next question after a short delay
+        setTimeout(() => {
+            quizState.currentStep++;
+            if (quizState.currentStep < QUIZ_LENGTH) {
+                quizState.answered = false;
+                renderQuizStep();
+            } else {
+                renderScore();
+            }
+        }, 200);
     } else {
         clickedBtn.classList.add('wrong');
         // Highlight the correct answer in green
@@ -228,13 +240,11 @@ function handleAnswer(clickedBtn, selected, correct, optionsContainer) {
                 btn.classList.add('correct');
             }
         });
+        // Disable all buttons
+        allButtons.forEach(btn => btn.classList.add('disabled'));
+        // Show Next button only when wrong
+        document.getElementById('quiz-next').style.display = 'inline-block';
     }
-
-    // Disable all buttons
-    allButtons.forEach(btn => btn.classList.add('disabled'));
-
-    // Show Next button
-    document.getElementById('quiz-next').style.display = 'inline-block';
 }
 
 function renderScore() {
