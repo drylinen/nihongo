@@ -1,12 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerMenu = document.getElementById('hamburger-menu');
-    const nav = document.querySelector('nav');
     const modal = document.getElementById('kana-modal');
-    const modalBody = document.getElementById('modal-body');
-
-    hamburgerMenu.addEventListener('click', () => {
-        nav.classList.toggle('open');
-    });
 
     // Close modal on button click
     document.getElementById('modal-close').addEventListener('click', () => {
@@ -20,13 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    document.querySelectorAll('nav ul li a').forEach(link => {
+    document.querySelectorAll('#menu-row a').forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
             const viewId = link.getAttribute('data-view');
             document.querySelector('.view.active').classList.remove('active');
             document.getElementById(`${viewId}-view`).classList.add('active');
-            nav.classList.remove('open'); // Close the menu after navigation
 
             // Initialize quiz when navigating to quiz view
             if (viewId === 'katakana-quiz') {
