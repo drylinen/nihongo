@@ -272,17 +272,17 @@ function renderWelcomeStep() {
     const optionsContainer = document.createElement('div');
     optionsContainer.id = 'quiz-options';
 
-    // Mode 1: Japanese --> Romaji
+    // Mode 1: Kana --> Romaji
     const btn1 = document.createElement('button');
     btn1.className = 'quiz-option';
-    btn1.textContent = 'Japanese \u2192 Romaji';
+    btn1.textContent = 'Kana \u2192 Romaji';
     btn1.addEventListener('click', () => startQuiz('jp-to-romaji'));
     optionsContainer.appendChild(btn1);
 
-    // Mode 2: Romaji --> Japanese
+    // Mode 2: Romaji --> Kana
     const btn2 = document.createElement('button');
     btn2.className = 'quiz-option';
-    btn2.textContent = 'Romaji \u2192 Japanese';
+    btn2.textContent = 'Romaji \u2192 Kana';
     btn2.addEventListener('click', () => startQuiz('romaji-to-jp'));
     optionsContainer.appendChild(btn2);
 
