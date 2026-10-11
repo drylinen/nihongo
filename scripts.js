@@ -13,6 +13,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // ── Introduction Modal ──
+    const introModal = document.getElementById('intro-modal');
+
+    document.getElementById('intro-modal-close').addEventListener('click', () => {
+        introModal.classList.remove('open');
+    });
+
+    introModal.addEventListener('click', (e) => {
+        if (e.target === introModal) {
+            introModal.classList.remove('open');
+        }
+    });
+
     document.querySelectorAll('#menu-row a').forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
@@ -30,9 +43,58 @@ document.addEventListener('DOMContentLoaded', function() {
     populateBrowseView();
 });
 
+function showIntroModal() {
+    const introModalBody = document.getElementById('intro-modal-body');
+    const introModal = document.getElementById('intro-modal');
+
+    introModalBody.innerHTML = `
+        <p>Within both Hiragana and Katakana, characters are categorized into 
+        functional subtypes based on how they alter pronunciation, represent syllable 
+        structures, or serve specific grammatical rules.</p>
+
+        <h3 style="color: #5DADE2;">Seion (清音) – "Clear Sounds"</h3>
+        <p>These are the 46 foundational baseline characters of the Japanese alphabet. 
+        They represent pure, unmodified syllables consisting of either a single vowel 
+        (a, i, u, e, o), a consonant paired with a vowel (e.g., ka, mi, ru), or the 
+        singular nasal consonant n (ん/ン).</p>
+
+        <h3 style="color: #E97474;">Dakuon (濁音) – "Voiced Sounds"</h3>
+        <p>These are variations of the baseline sounds created by adding a dakuten (゛), 
+        a diacritic mark that looks like a double quotation mark. It converts unvoiced 
+        consonants into voiced consonants. 
+        K → G: か (ka) becomes が (ga), 
+        S → Z: し (shi) becomes じ (ji), 
+        T → D: た (ta) becomes だ (da), and
+        H → B: は (ha) becomes ば (ba)</p>
+
+        <h3 style="color: #F5B041;">Handakuon (半濁音) – "Semi-Voiced Sounds"</h3>
+        <p>This subtype applies exclusively to the H-row characters. By adding a 
+        handakuten (゜), which looks like a small circle, the breathy "H" sound is 
+        transformed into a crisp plosive "P" sound. 
+        H → P: は (ha) becomes ぱ (pa), 
+        ひ (hi) becomes ぴ (pi), and 
+        ふ (fu) becomes ぷ (pu).</p>
+
+        <h3 style="color: #7DCEA0;">Yōon (拗音) – "Contracted / Blended Sounds"</h3>
+        <p>Yōon characters represent compound syllables. They are formed by combining 
+        a baseline character ending in an "i" sound (like ki, shi, chi, ni, mi, ri) with 
+        a stunted, smaller version of ya, yu, or yo (ゃ/ゅ/ょ or ャ/ュ/ョ). They collapse 
+        two characters into a single spoken syllable.</p>
+    `;
+
+    introModal.classList.add('open');
+}
+
 function populateBrowseView() {
     const browseView = document.getElementById('katakana-browse-view');
     if (!katakana) return;
+
+    // Introduction link at the top
+    const introLink = document.createElement('div');
+    introLink.className = 'intro-link';
+    introLink.textContent = 'Introduction';
+    introLink.addEventListener('click', showIntroModal);
+    browseView.appendChild(introLink);
 
     // Group by row_type
     const rows = {};
@@ -54,7 +116,7 @@ function populateBrowseView() {
         rows[rowType].forEach(item => {
             const card = document.createElement('div');
             card.className = 'kana-card';
-            if (item.type === 'youon') {
+            if (item.type === 'yōon') {
                 card.classList.add('kana-card--wide');
             }
             card.classList.add(`kana-card--${item.type}`);
@@ -104,7 +166,7 @@ function showKanaModal(item) {
     modalBody.innerHTML = `
         <div class="modal-kana">${item.kana}</div>
         <div class="modal-romaji">${item.romaji}</div>
-        <div class="modal-type">${item.type}</div>
+        <div class="modal-type">Type: ${item.type}</div>
         ${wordsHtml}
     `;
 

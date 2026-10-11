@@ -2,7 +2,7 @@ const katakana = [
   {
     "kana": "ア",
     "romaji": "a",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "a-row",
     "words": [
       {
@@ -26,7 +26,7 @@ const katakana = [
   {
     "kana": "イ",
     "romaji": "i",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "a-row",
     "words": [
       {
@@ -50,7 +50,7 @@ const katakana = [
   {
     "kana": "ウ",
     "romaji": "u",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "a-row",
     "words": [
       {
@@ -74,7 +74,7 @@ const katakana = [
   {
     "kana": "エ",
     "romaji": "e",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "a-row",
     "words": [
       {
@@ -98,7 +98,7 @@ const katakana = [
   {
     "kana": "オ",
     "romaji": "o",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "a-row",
     "words": [
       {
@@ -122,7 +122,7 @@ const katakana = [
   {
     "kana": "カ",
     "romaji": "ka",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ka-row",
     "words": [
       {
@@ -146,7 +146,7 @@ const katakana = [
   {
     "kana": "キ",
     "romaji": "ki",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ka-row",
     "words": [
       {
@@ -170,7 +170,7 @@ const katakana = [
   {
     "kana": "ク",
     "romaji": "ku",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ka-row",
     "words": [
       {
@@ -194,7 +194,7 @@ const katakana = [
   {
     "kana": "ケ",
     "romaji": "ke",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ka-row",
     "words": [
       {
@@ -218,7 +218,7 @@ const katakana = [
   {
     "kana": "コ",
     "romaji": "ko",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ka-row",
     "words": [
       {
@@ -242,7 +242,7 @@ const katakana = [
   {
     "kana": "サ",
     "romaji": "sa",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "sa-row",
     "words": [
       {
@@ -266,7 +266,7 @@ const katakana = [
   {
     "kana": "シ",
     "romaji": "shi",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "sa-row",
     "words": [
       {
@@ -290,7 +290,7 @@ const katakana = [
   {
     "kana": "ス",
     "romaji": "su",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "sa-row",
     "words": [
       {
@@ -314,7 +314,7 @@ const katakana = [
   {
     "kana": "セ",
     "romaji": "se",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "sa-row",
     "words": [
       {
@@ -338,7 +338,7 @@ const katakana = [
   {
     "kana": "ソ",
     "romaji": "so",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "sa-row",
     "words": [
       {
@@ -362,7 +362,7 @@ const katakana = [
   {
     "kana": "タ",
     "romaji": "ta",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ta-row",
     "words": [
       {
@@ -386,7 +386,7 @@ const katakana = [
   {
     "kana": "チ",
     "romaji": "chi",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ta-row",
     "words": [
       {
@@ -410,7 +410,7 @@ const katakana = [
   {
     "kana": "ツ",
     "romaji": "tsu",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ta-row",
     "words": [
       {
@@ -434,7 +434,7 @@ const katakana = [
   {
     "kana": "テ",
     "romaji": "te",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ta-row",
     "words": [
       {
@@ -458,7 +458,7 @@ const katakana = [
   {
     "kana": "ト",
     "romaji": "to",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ta-row",
     "words": [
       {
@@ -482,7 +482,7 @@ const katakana = [
   {
     "kana": "ナ",
     "romaji": "na",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "na-row",
     "words": [
       {
@@ -506,7 +506,7 @@ const katakana = [
   {
     "kana": "ニ",
     "romaji": "ni",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "na-row",
     "words": [
       {
@@ -530,7 +530,7 @@ const katakana = [
   {
     "kana": "ヌ",
     "romaji": "nu",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "na-row",
     "words": [
       {
@@ -554,7 +554,7 @@ const katakana = [
   {
     "kana": "ネ",
     "romaji": "ne",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "na-row",
     "words": [
       {
@@ -578,7 +578,7 @@ const katakana = [
   {
     "kana": "ノ",
     "romaji": "no",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "na-row",
     "words": [
       {
@@ -602,7 +602,7 @@ const katakana = [
   {
     "kana": "ハ",
     "romaji": "ha",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ha-row",
     "words": [
       {
@@ -626,7 +626,7 @@ const katakana = [
   {
     "kana": "ヒ",
     "romaji": "hi",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ha-row",
     "words": [
       {
@@ -650,7 +650,7 @@ const katakana = [
   {
     "kana": "フ",
     "romaji": "fu",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ha-row",
     "words": [
       {
@@ -674,7 +674,7 @@ const katakana = [
   {
     "kana": "ヘ",
     "romaji": "he",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ha-row",
     "words": [
       {
@@ -698,7 +698,7 @@ const katakana = [
   {
     "kana": "ホ",
     "romaji": "ho",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ha-row",
     "words": [
       {
@@ -722,7 +722,7 @@ const katakana = [
   {
     "kana": "マ",
     "romaji": "ma",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ma-row",
     "words": [
       {
@@ -746,7 +746,7 @@ const katakana = [
   {
     "kana": "ミ",
     "romaji": "mi",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ma-row",
     "words": [
       {
@@ -770,7 +770,7 @@ const katakana = [
   {
     "kana": "ム",
     "romaji": "mu",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ma-row",
     "words": [
       {
@@ -794,7 +794,7 @@ const katakana = [
   {
     "kana": "メ",
     "romaji": "me",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ma-row",
     "words": [
       {
@@ -818,7 +818,7 @@ const katakana = [
   {
     "kana": "モ",
     "romaji": "mo",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ma-row",
     "words": [
       {
@@ -842,7 +842,7 @@ const katakana = [
   {
     "kana": "ヤ",
     "romaji": "ya",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ya-row",
     "words": [
       {
@@ -866,7 +866,7 @@ const katakana = [
   {
     "kana": "ユ",
     "romaji": "yu",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ya-row",
     "words": [
       {
@@ -890,7 +890,7 @@ const katakana = [
   {
     "kana": "ヨ",
     "romaji": "yo",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ya-row",
     "words": [
       {
@@ -914,7 +914,7 @@ const katakana = [
   {
     "kana": "ラ",
     "romaji": "ra",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ra-row",
     "words": [
       {
@@ -938,7 +938,7 @@ const katakana = [
   {
     "kana": "リ",
     "romaji": "ri",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ra-row",
     "words": [
       {
@@ -962,7 +962,7 @@ const katakana = [
   {
     "kana": "ル",
     "romaji": "ru",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ra-row",
     "words": [
       {
@@ -986,7 +986,7 @@ const katakana = [
   {
     "kana": "レ",
     "romaji": "re",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ra-row",
     "words": [
       {
@@ -1010,7 +1010,7 @@ const katakana = [
   {
     "kana": "ロ",
     "romaji": "ro",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "ra-row",
     "words": [
       {
@@ -1034,7 +1034,7 @@ const katakana = [
   {
     "kana": "ワ",
     "romaji": "wa",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "wa-row",
     "words": [
       {
@@ -1058,7 +1058,7 @@ const katakana = [
   {
     "kana": "ヲ",
     "romaji": "wo",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "wa-row",
     "words": [
       {
@@ -1082,7 +1082,7 @@ const katakana = [
   {
     "kana": "ン",
     "romaji": "n",
-    "type": "gojuuon",
+    "type": "seion",
     "row_type": "n-row",
     "words": [
       {
@@ -1106,7 +1106,7 @@ const katakana = [
     {
     "kana": "ガ",
     "romaji": "ga",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "g-row",
     "words": [
       {
@@ -1130,7 +1130,7 @@ const katakana = [
   {
     "kana": "ギ",
     "romaji": "gi",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "g-row",
     "words": [
       {
@@ -1154,7 +1154,7 @@ const katakana = [
   {
     "kana": "グ",
     "romaji": "gu",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "g-row",
     "words": [
       {
@@ -1178,7 +1178,7 @@ const katakana = [
   {
     "kana": "ゲ",
     "romaji": "ge",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "g-row",
     "words": [
       {
@@ -1202,7 +1202,7 @@ const katakana = [
   {
     "kana": "ゴ",
     "romaji": "go",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "g-row",
     "words": [
       {
@@ -1226,7 +1226,7 @@ const katakana = [
   {
     "kana": "ザ",
     "romaji": "za",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "z-row",
     "words": [
       {
@@ -1250,7 +1250,7 @@ const katakana = [
   {
     "kana": "ジ",
     "romaji": "ji",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "z-row",
     "words": [
       {
@@ -1274,7 +1274,7 @@ const katakana = [
   {
     "kana": "ズ",
     "romaji": "zu",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "z-row",
     "words": [
       {
@@ -1298,7 +1298,7 @@ const katakana = [
   {
     "kana": "ゼ",
     "romaji": "ze",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "z-row",
     "words": [
       {
@@ -1322,7 +1322,7 @@ const katakana = [
   {
     "kana": "ゾ",
     "romaji": "zo",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "z-row",
     "words": [
       {
@@ -1346,7 +1346,7 @@ const katakana = [
   {
     "kana": "ダ",
     "romaji": "da",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "d-row",
     "words": [
       {
@@ -1370,7 +1370,7 @@ const katakana = [
   {
     "kana": "ヂ",
     "romaji": "ji",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "d-row",
     "words": [
       {
@@ -1394,7 +1394,7 @@ const katakana = [
   {
     "kana": "ヅ",
     "romaji": "zu",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "d-row",
     "words": [
       {
@@ -1418,7 +1418,7 @@ const katakana = [
   {
     "kana": "デ",
     "romaji": "de",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "d-row",
     "words": [
       {
@@ -1442,7 +1442,7 @@ const katakana = [
   {
     "kana": "ド",
     "romaji": "do",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "d-row",
     "words": [
       {
@@ -1466,7 +1466,7 @@ const katakana = [
   {
     "kana": "バ",
     "romaji": "ba",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "b-row",
     "words": [
       {
@@ -1490,7 +1490,7 @@ const katakana = [
   {
     "kana": "ビ",
     "romaji": "bi",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "b-row",
     "words": [
       {
@@ -1514,7 +1514,7 @@ const katakana = [
   {
     "kana": "ブ",
     "romaji": "bu",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "b-row",
     "words": [
       {
@@ -1538,7 +1538,7 @@ const katakana = [
   {
     "kana": "ベ",
     "romaji": "be",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "b-row",
     "words": [
       {
@@ -1562,7 +1562,7 @@ const katakana = [
   {
     "kana": "ボ",
     "romaji": "bo",
-    "type": "dakuten",
+    "type": "dakuon",
     "row_type": "b-row",
     "words": [
       {
@@ -1586,7 +1586,7 @@ const katakana = [
   {
     "kana": "パ",
     "romaji": "pa",
-    "type": "handakuten",
+    "type": "handakuon",
     "row_type": "p-row",
     "words": [
       {
@@ -1610,7 +1610,7 @@ const katakana = [
   {
     "kana": "ピ",
     "romaji": "pi",
-    "type": "handakuten",
+    "type": "handakuon",
     "row_type": "p-row",
     "words": [
       {
@@ -1634,7 +1634,7 @@ const katakana = [
   {
     "kana": "プ",
     "romaji": "pu",
-    "type": "handakuten",
+    "type": "handakuon",
     "row_type": "p-row",
     "words": [
       {
@@ -1658,7 +1658,7 @@ const katakana = [
   {
     "kana": "ペ",
     "romaji": "pe",
-    "type": "handakuten",
+    "type": "handakuon",
     "row_type": "p-row",
     "words": [
       {
@@ -1682,7 +1682,7 @@ const katakana = [
   {
     "kana": "ポ",
     "romaji": "po",
-    "type": "handakuten",
+    "type": "handakuon",
     "row_type": "p-row",
     "words": [
       {
@@ -1706,7 +1706,7 @@ const katakana = [
   {
     "kana": "キャ",
     "romaji": "kya",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "ky-row",
     "words": [
       {
@@ -1730,7 +1730,7 @@ const katakana = [
   {
     "kana": "キュ",
     "romaji": "kyu",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "ky-row",
     "words": [
       {
@@ -1754,7 +1754,7 @@ const katakana = [
   {
     "kana": "キョ",
     "romaji": "kyo",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "ky-row",
     "words": [
       {
@@ -1778,7 +1778,7 @@ const katakana = [
   {
     "kana": "シャ",
     "romaji": "sha",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "sh-row",
     "words": [
       {
@@ -1802,7 +1802,7 @@ const katakana = [
   {
     "kana": "シュ",
     "romaji": "shu",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "sh-row",
     "words": [
       {
@@ -1826,7 +1826,7 @@ const katakana = [
   {
     "kana": "ショ",
     "romaji": "sho",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "sh-row",
     "words": [
       {
@@ -1850,7 +1850,7 @@ const katakana = [
   {
     "kana": "チャ",
     "romaji": "cha",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "ch-row",
     "words": [
       {
@@ -1874,7 +1874,7 @@ const katakana = [
   {
     "kana": "チュ",
     "romaji": "chu",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "ch-row",
     "words": [
       {
@@ -1898,7 +1898,7 @@ const katakana = [
   {
     "kana": "チョ",
     "romaji": "cho",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "ch-row",
     "words": [
       {
@@ -1922,7 +1922,7 @@ const katakana = [
   {
     "kana": "ニャ",
     "romaji": "nya",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "ny-row",
     "words": [
       {
@@ -1946,7 +1946,7 @@ const katakana = [
   {
     "kana": "ニュ",
     "romaji": "nyu",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "ny-row",
     "words": [
       {
@@ -1970,7 +1970,7 @@ const katakana = [
   {
     "kana": "ニョ",
     "romaji": "nyo",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "ny-row",
     "words": [
       {
@@ -1994,7 +1994,7 @@ const katakana = [
   {
     "kana": "ヒャ",
     "romaji": "hya",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "hy-row",
     "words": [
       {
@@ -2018,7 +2018,7 @@ const katakana = [
   {
     "kana": "ヒュ",
     "romaji": "hyu",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "hy-row",
     "words": [
       {
@@ -2042,7 +2042,7 @@ const katakana = [
   {
     "kana": "ヒョ",
     "romaji": "hyo",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "hy-row",
     "words": [
       {
@@ -2066,7 +2066,7 @@ const katakana = [
   {
     "kana": "ミャ",
     "romaji": "mya",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "my-row",
     "words": [
       {
@@ -2090,7 +2090,7 @@ const katakana = [
   {
     "kana": "ミュ",
     "romaji": "myu",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "my-row",
     "words": [
       {
@@ -2114,7 +2114,7 @@ const katakana = [
   {
     "kana": "ミョ",
     "romaji": "myo",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "my-row",
     "words": [
       {
@@ -2138,7 +2138,7 @@ const katakana = [
   {
     "kana": "リャ",
     "romaji": "rya",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "ry-row",
     "words": [
       {
@@ -2162,7 +2162,7 @@ const katakana = [
   {
     "kana": "リュ",
     "romaji": "ryu",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "ry-row",
     "words": [
       {
@@ -2186,7 +2186,7 @@ const katakana = [
   {
     "kana": "リョ",
     "romaji": "ryo",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "ry-row",
     "words": [
       {
@@ -2210,7 +2210,7 @@ const katakana = [
   {
     "kana": "ギャ",
     "romaji": "gya",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "gy-row",
     "words": [
       {
@@ -2234,7 +2234,7 @@ const katakana = [
   {
     "kana": "ギュ",
     "romaji": "gyu",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "gy-row",
     "words": [
       {
@@ -2258,7 +2258,7 @@ const katakana = [
   {
     "kana": "ギョ",
     "romaji": "gyo",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "gy-row",
     "words": [
       {
@@ -2282,7 +2282,7 @@ const katakana = [
   {
     "kana": "ジャ",
     "romaji": "ja",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "j-row",
     "words": [
       {
@@ -2306,7 +2306,7 @@ const katakana = [
   {
     "kana": "ジュ",
     "romaji": "ju",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "j-row",
     "words": [
       {
@@ -2330,7 +2330,7 @@ const katakana = [
   {
     "kana": "ジョ",
     "romaji": "jo",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "j-row",
     "words": [
       {
@@ -2354,7 +2354,7 @@ const katakana = [
   {
     "kana": "ビャ",
     "romaji": "bya",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "by-row",
     "words": [
       {
@@ -2378,7 +2378,7 @@ const katakana = [
   {
     "kana": "ビュ",
     "romaji": "byu",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "by-row",
     "words": [
       {
@@ -2402,7 +2402,7 @@ const katakana = [
   {
     "kana": "ビョ",
     "romaji": "byo",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "by-row",
     "words": [
       {
@@ -2426,7 +2426,7 @@ const katakana = [
   {
     "kana": "ピャ",
     "romaji": "pya",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "py-row",
     "words": [
       {
@@ -2450,7 +2450,7 @@ const katakana = [
   {
     "kana": "ピュ",
     "romaji": "pyu",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "py-row",
     "words": [
       {
@@ -2474,7 +2474,7 @@ const katakana = [
   {
     "kana": "ピョ",
     "romaji": "pyo",
-    "type": "youon",
+    "type": "yōon",
     "row_type": "py-row",
     "words": [
       {
