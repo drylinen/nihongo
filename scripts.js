@@ -109,6 +109,11 @@ function showKanaModal(item) {
     `;
 
     modal.classList.add('open');
+
+    // Click a Japanese word to hear it spoken
+    modalBody.querySelectorAll('.modal-word-kana').forEach(el => {
+        el.addEventListener('click', () => speakJapanese(el.textContent));
+    });
 }
 
 /* ── Speech Synthesis ── */
