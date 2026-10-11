@@ -152,7 +152,19 @@ main {
 
 #quiz-kana {
     font-size: 5rem;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 0.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+#quiz-kana:hover {
+    color: #add8e6;
+}
+
+#quiz-speak-hint {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 2rem;
 }
 
 #quiz-options {

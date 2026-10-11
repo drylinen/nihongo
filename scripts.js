@@ -111,6 +111,30 @@ function showKanaModal(item) {
     modal.classList.add('open');
 }
 
+/* ── Speech Synthesis ── */
+
+let japaneseVoice = null;
+
+function loadJapaneseVoice() {
+    const voices = speechSynthesis.getVoices();
+    japaneseVoice = voices.find(v => v.lang.startsWith('ja')) || null;
+}
+
+// Voices load asynchronously on some browsers
+speechSynthesis.onvoiceschanged = loadJapaneseVoice;
+loadJapaneseVoice();
+
+function speakJapanese(text) {
+    if (!text) return;
+    speechSynthesis.cancel(); // Stop any ongoing speech
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'ja-JP';
+    if (japaneseVoice) {
+        utterance.voice = japaneseVoice;
+    }
+    speechSynthesis.speak(utterance);
+}
+
 /* ── Quiz Logic ── */
 
 const QUIZ_LENGTH = 10;
@@ -206,7 +230,14 @@ function renderQuizStep() {
     const kanaDisplay = document.createElement('div');
     kanaDisplay.id = 'quiz-kana';
     kanaDisplay.textContent = question.display;
+    kanaDisplay.addEventListener('click', () => speakJapanese(question.display));
     container.appendChild(kanaDisplay);
+
+    // Click-to-speak hint
+    const speakHint = document.createElement('div');
+    speakHint.id = 'quiz-speak-hint';
+    speakHint.textContent = '🔊 Click the word to hear it';
+    container.appendChild(speakHint);
 
     // Options
     const optionsContainer = document.createElement('div');
