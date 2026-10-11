@@ -13,6 +13,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // ── Introduction Modal ──
+    const introModal = document.getElementById('intro-modal');
+
+    document.getElementById('intro-modal-close').addEventListener('click', () => {
+        introModal.classList.remove('open');
+    });
+
+    introModal.addEventListener('click', (e) => {
+        if (e.target === introModal) {
+            introModal.classList.remove('open');
+        }
+    });
+
     document.querySelectorAll('#menu-row a').forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
@@ -30,9 +43,28 @@ document.addEventListener('DOMContentLoaded', function() {
     populateBrowseView();
 });
 
+function showIntroModal() {
+    const introModalBody = document.getElementById('intro-modal-body');
+    const introModal = document.getElementById('intro-modal');
+
+    introModalBody.innerHTML = `
+        <h2>Test</h2>
+        <p>TBD</p>
+    `;
+
+    introModal.classList.add('open');
+}
+
 function populateBrowseView() {
     const browseView = document.getElementById('katakana-browse-view');
     if (!katakana) return;
+
+    // Introduction link at the top
+    const introLink = document.createElement('div');
+    introLink.className = 'intro-link';
+    introLink.textContent = 'Introduction';
+    introLink.addEventListener('click', showIntroModal);
+    browseView.appendChild(introLink);
 
     // Group by row_type
     const rows = {};
