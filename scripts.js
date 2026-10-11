@@ -54,7 +54,7 @@ function populateBrowseView() {
         rows[rowType].forEach(item => {
             const card = document.createElement('div');
             card.className = 'kana-card';
-            if (item.type === 'youon') {
+            if (item.type === 'yōon') {
                 card.classList.add('kana-card--wide');
             }
             card.classList.add(`kana-card--${item.type}`);
@@ -104,7 +104,7 @@ function showKanaModal(item) {
     modalBody.innerHTML = `
         <div class="modal-kana">${item.kana}</div>
         <div class="modal-romaji">${item.romaji}</div>
-        <div class="modal-type">${item.type}</div>
+        <div class="modal-type">Type: ${item.type}</div>
         ${wordsHtml}
     `;
 
