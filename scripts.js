@@ -1,3 +1,10 @@
+// ── Current Kana Type ──
+let currentKanaType = 'katakana';
+
+function getData() {
+    return currentKanaType === 'katakana' ? katakana : hiragana;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('kana-modal');
 
@@ -26,21 +33,62 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    document.querySelectorAll('#menu-row a').forEach(link => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault();
-            const viewId = link.getAttribute('data-view');
-            document.querySelector('.view.active').classList.remove('active');
-            document.getElementById(`${viewId}-view`).classList.add('active');
+    // ── Submenu Toggle ──
+    const submenuRow = document.getElementById('submenu-row');
 
-            // Initialize quiz when navigating to quiz view
-            if (viewId === 'katakana-quiz') {
-                renderWelcomeStep();
+    document.querySelectorAll('.submenu-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const type = btn.getAttribute('data-type');
+            currentKanaType = type;
+
+            // Update active state on buttons
+            document.querySelectorAll('.submenu-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Switch to the matching view for the new kana type
+            const activeView = document.querySelector('.view.active');
+            if (activeView && activeView.id !== 'home-view') {
+                const viewName = activeView.id.replace('-view', '');
+                const oldPrefix = viewName.split('-')[0]; // e.g. 'katakana'
+                if (oldPrefix !== type) {
+                    activeView.classList.remove('active');
+                    document.getElementById(`${type}-${viewName.substring(oldPrefix.length + 1)}-view`).classList.add('active');
+                }
+
+                if (viewName.endsWith('-browse')) {
+                    populateBrowseView();
+                } else if (viewName.endsWith('-quiz')) {
+                    renderWelcomeStep();
+                }
             }
         });
     });
 
-    populateBrowseView();
+    // ── Menu Navigation ──
+    document.querySelectorAll('#menu-row a').forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const viewType = link.getAttribute('data-view');
+
+            // Show submenu when navigating away from home
+            if (viewType !== 'home') {
+                submenuRow.classList.add('visible');
+            }
+
+            // Determine the full view ID based on current kana type
+            const viewId = `${currentKanaType}-${viewType}`;
+
+            document.querySelector('.view.active').classList.remove('active');
+            document.getElementById(`${viewId}-view`).classList.add('active');
+
+            // Initialize views
+            if (viewType === 'browse') {
+                populateBrowseView();
+            } else if (viewType === 'quiz') {
+                renderWelcomeStep();
+            }
+        });
+    });
 });
 
 function showIntroModal() {
@@ -86,8 +134,11 @@ function showIntroModal() {
 }
 
 function populateBrowseView() {
-    const browseView = document.getElementById('katakana-browse-view');
-    if (!katakana) return;
+    const browseView = document.getElementById(`${currentKanaType}-browse-view`);
+    const data = getData();
+    if (!data) return;
+
+    browseView.innerHTML = '';
 
     // Introduction link at the top
     const introLink = document.createElement('div');
@@ -98,7 +149,7 @@ function populateBrowseView() {
 
     // Group by row_type
     const rows = {};
-    katakana.forEach(item => {
+    data.forEach(item => {
         if (!rows[item.row_type]) {
             rows[item.row_type] = [];
         }
@@ -212,10 +263,11 @@ let quizState = {
     answered: false
 };
 
-// Flatten all words from every katakana entry into one pool
+// Flatten all words from every kana entry into one pool
 function getAllWords() {
+    const data = getData();
     const all = [];
-    katakana.forEach(item => {
+    data.forEach(item => {
         if (item.words) {
             item.words.forEach(w => {
                 all.push({ word: w.word, sv: w.sv, en: w.en });
@@ -226,8 +278,9 @@ function getAllWords() {
 }
 
 function startQuiz(mode = 'jp-to-romaji') {
-    const quizView = document.getElementById('katakana-quiz-view');
+    const quizView = document.getElementById(`${currentKanaType}-quiz-view`);
     quizView.innerHTML = '';
+    const data = getData();
 
     if (mode === 'jp-to-sv') {
         // Word-based quiz: Japanese word → Swedish translation
@@ -246,10 +299,10 @@ function startQuiz(mode = 'jp-to-romaji') {
         });
     } else {
         // Original kana-based quiz modes
-        const shuffled = [...katakana].sort(() => Math.random() - 0.5);
+        const shuffled = [...data].sort(() => Math.random() - 0.5);
         quizState.questions = shuffled.slice(0, QUIZ_LENGTH).map(item => {
             // Pick 2 wrong distractors from the remaining items
-            const others = katakana.filter(k => k.id !== item.id);
+            const others = data.filter(k => k.id !== item.id);
             const distractors = others.sort(() => Math.random() - 0.5).slice(0, 2);
             const optionsList = [item, ...distractors].sort(() => Math.random() - 0.5);
 
@@ -277,7 +330,7 @@ function startQuiz(mode = 'jp-to-romaji') {
 }
 
 function renderQuizStep() {
-    const quizView = document.getElementById('katakana-quiz-view');
+    const quizView = document.getElementById(`${currentKanaType}-quiz-view`);
     quizView.innerHTML = '';
 
     const step = quizState.currentStep;
@@ -376,7 +429,7 @@ function handleAnswer(clickedBtn, selected, correct, optionsContainer) {
 }
 
 function renderScore() {
-    const quizView = document.getElementById('katakana-quiz-view');
+    const quizView = document.getElementById(`${currentKanaType}-quiz-view`);
     quizView.innerHTML = '';
 
     const container = document.createElement('div');
@@ -397,7 +450,7 @@ function renderScore() {
 }
 
 function renderWelcomeStep() {
-    const quizView = document.getElementById('katakana-quiz-view');
+    const quizView = document.getElementById(`${currentKanaType}-quiz-view`);
     quizView.innerHTML = '';
 
     const container = document.createElement('div');

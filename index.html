@@ -10,8 +10,12 @@
     <header>
         <div id="title">Nihon GO!</div>
         <div id="menu-row">
-            <a href="#" data-view="katakana-browse">BROWSE</a>
-            <a href="#" data-view="katakana-quiz">QUIZ</a>
+            <a href="#" data-view="browse">BROWSE</a>
+            <a href="#" data-view="quiz">QUIZ</a>
+        </div>
+        <div id="submenu-row">
+            <button class="submenu-btn active" data-type="katakana">Katakana</button>
+            <button class="submenu-btn" data-type="hiragana">Hiragana</button>
         </div>
     </header>
     <main>
@@ -23,6 +27,12 @@
         </div>
         <div id="katakana-quiz-view" class="view">
             <!-- Katakana Quiz content will go here -->
+        </div>
+        <div id="hiragana-browse-view" class="view">
+            <!-- Hiragana Browse content will go here -->
+        </div>
+        <div id="hiragana-quiz-view" class="view">
+            <!-- Hiragana Quiz content will go here -->
         </div>
     </main>
 
@@ -44,6 +54,7 @@
 
     <!-- Load data first -->
     <script src="katakana.js"></script>
+    <script src="hiragana.js"></script>
     <!-- Load logic second -->
     <script src="scripts.js"></script>
 </body>
