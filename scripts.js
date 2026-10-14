@@ -430,7 +430,7 @@ function handleAnswer(clickedBtn, selected, correct, optionsContainer) {
 
 function renderScore() {
     const quizView = document.getElementById(`${currentKanaType}-quiz-view`);
-    quizView.innerHTML = '';
+    quizView.innerHTML = 'Nice work!';
 
     const container = document.createElement('div');
     container.id = 'quiz-container';
