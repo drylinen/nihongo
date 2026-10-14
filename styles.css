@@ -1,25 +1,31 @@
 /* Dark theme styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background-color: #080808;
     color: #e0e0e0;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #1e1e1e;
+    background-color: #161616;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #title {
+    width: 100%;
     padding: 1rem;
-    font-size: 1.5rem; /* Made it smaller */
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-family: 'Isometra', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
+    background-color: #dddddd;
+    color: #BC002D;
+    text-shadow: 2px 2px 3px #D4AF37;
 }
 
 #menu-row {
@@ -28,13 +34,13 @@ header {
     justify-content: center;
     gap: 2rem;
     padding: 0.75rem 1rem;
-    background-color: #191919;
-    border-top: 1px solid #191919;
+    background-color: #393939;
+    border-top: 1px solid #393939;
     width: 100%;
 }
 
 #menu-row a {
-    color: #add8e6; /* Light Blue */
+    color: #cccccc; /* Light Gray */
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.2s;
@@ -51,7 +57,7 @@ header {
     justify-content: center;
     gap: 1rem;
     padding: 0.5rem 1rem;
-    background-color: #1a0720;
+    background-color: #161616;
     width: 100%;
     visibility: hidden;
 }
@@ -65,7 +71,7 @@ header {
     border: 2px solid transparent;
     border-radius: 6px;
     background-color: transparent;
-    color: #add8e6;
+    color: #cccccc;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.2s, color 0.2s;
@@ -78,7 +84,7 @@ header {
 
 .submenu-btn.active {
     background-color: rgba(255, 255, 255, 0.12);
-    color: #fff;
+    color: #cccccc;
     border-color: #555;
 }
 
@@ -104,7 +110,7 @@ main {
 }
 
 #welcome-message {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: center;
 }
 
@@ -199,7 +205,7 @@ main {
 }
 
 #quiz-kana:hover {
-    color: #add8e6;
+    color: #cccccc;
 }
 
 #quiz-speak-hint {
@@ -372,7 +378,7 @@ main {
 
 /* Introduction link in browse view */
 .intro-link {
-    color: #add8e6;
+    color: #cccccc;
     text-decoration: none;
     cursor: pointer;
     font-size: 1.1rem;
